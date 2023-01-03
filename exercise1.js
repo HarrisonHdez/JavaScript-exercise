@@ -12,4 +12,27 @@ function myFuncion(text) {
 }
 
 
-myFuncion('Hello world')
+myFuncion('Hello World')
+
+const myFuncion2 = (text) => {
+    if ( typeof text === 'string') {
+        let result = text.length;
+        return result
+    } else {
+        return 'Ingresa un estring'
+    }
+}
+
+console.log(myFuncion2('Hello world'));
+
+
+
+const myFuncion3 = (text = '') => {
+    if(!text) {
+       return  'No ingresaste ninguna cadena'
+    } else {
+        return `El texto ${text} tiene ${text.length} caracter`
+    }
+}
+
+console.log(myFuncion3('Hello world')); 
