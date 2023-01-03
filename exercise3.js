@@ -4,4 +4,9 @@ function separateText(text, separator) {
     return text.split(separator);
 }
 
-console.log( separateText('hola que tal', ' ') );
+console.log( separateText2('hola que tal', ' ') );
+function separateText2(text) {
+    return text.split(' ');
+}
+
+console.log( separateText2('hola que tal') );
