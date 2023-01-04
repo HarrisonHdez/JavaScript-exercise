@@ -5,8 +5,8 @@
 
 function countWord(text, word) {
 
-    text = text.toLowerCase().replace(/[!!.,-]/gi, '') ;
-    word = word.toLowerCase()
+    let text = text.toLowerCase().replace(/[!!.,-]/gi, '') ;
+    let word = word.toLowerCase()
 
     const words = text.split(' ');
 
