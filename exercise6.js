@@ -5,13 +5,13 @@
 
 function countWord(text, word) {
 
-    let text = text.toLowerCase().replace(/[!!.,-]/gi, '') ;
-    let word = word.toLowerCase()
+    let textClean = text.toLowerCase().replace(/[!!.,-]/gi, '') ;
+    let wordClean = word.toLowerCase()
 
-    const words = text.split(' ');
+    const words = textClean.split(' ');
 
     const count = words.reduce((acc, curr ) => {
-        if( curr === word ) {
+        if( curr === wordClean) {
             acc++;
         }
         return acc
